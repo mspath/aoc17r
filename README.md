@@ -14,6 +14,10 @@ I'll attempt to solve them in Rust while learning it. purely educational.
 
 solve a captcha
 
+### Day 2 Corruption Checksum
+
+calculate checksums of a spreadsheet
+
 ----
 
-updated: 2022-06-21
+updated: 2022-08-10
