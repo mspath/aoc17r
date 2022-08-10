@@ -23,6 +23,18 @@ fn breakfast(input: &str) -> u32 {
     checksum
 }
 
+// this will return the first match as per instructions 
+fn checksum_vec(values: Vec<u32>) -> u32 {
+    for i in &values {
+        for j in &values {
+            if i % j == 0 && i != j {
+                return i / j;
+            }
+        }
+    }
+    0
+}
+
 fn lunch(input: &str) -> u32 {
     let spreadsheet: Vec<Vec<u32>> = input.split("\n").into_iter().map(|row| {
         let values: Vec<u32> = row.split_whitespace()
@@ -32,8 +44,9 @@ fn lunch(input: &str) -> u32 {
         values
     }).collect();
 
-    //TODO
-    let checksum = 0;
+    let checksum = spreadsheet.into_iter()
+        .map(|row| checksum_vec(row))
+        .sum();
     checksum
 }
 
