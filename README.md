@@ -18,6 +18,10 @@ solve a captcha
 
 calculate checksums of a spreadsheet
 
+### Day 3 Spiral Memory
+
+stress test an experimental new kind of memory
+
 ----
 
-updated: 2022-08-10
+updated: 2022-08-22
