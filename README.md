@@ -22,6 +22,10 @@ calculate checksums of a spreadsheet
 
 stress test an experimental new kind of memory
 
+### Day 4 High-Entropy Passphrases
+
+check the validity and security of passphrases
+
 ----
 
-updated: 2022-08-22
+updated: 2022-08-24
