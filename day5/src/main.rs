@@ -34,16 +34,29 @@ fn breakfast(input: &str) -> usize {
     loop {
         counter += 1;
         let step: i32 = instructions[index];
-        let next: i32 = step + index as i32;
-        if next < 0 || next > RANGE as i32 { return counter; }
         instructions[index] += 1;
         index = add(index, step).unwrap();
         if index >= RANGE { return counter; }
     }
 }
 
-fn lunch(input: &str) -> u32 {
-    0
+fn lunch(input: &str) -> usize {
+    let numbers: Vec<i32> = input
+        .lines()
+        .into_iter()
+        .map(|v| v.parse::<i32>().unwrap())
+        .collect();
+    let mut instructions: [i32; RANGE] = vec_into_array(numbers);
+    let mut counter: usize = 0;
+    let mut index: usize = 0;
+    loop {
+        counter += 1;
+        let step: i32 = instructions[index];
+        if step > 2 { instructions[index] -= 1; }
+        else { instructions[index] += 1; }
+        index = add(index, step).unwrap();
+        if index >= RANGE { return counter; }
+    }
 }
 
 #[cfg(test)]
