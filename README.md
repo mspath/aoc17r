@@ -26,6 +26,10 @@ stress test an experimental new kind of memory
 
 check the validity and security of passphrases
 
+### Day 5 A Maze of Twisty Trampolines
+
+help the CPU simulate jump instructions
+
 ----
 
 updated: 2022-08-24
