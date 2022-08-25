@@ -40,7 +40,6 @@ fn breakfast(input: &str) -> usize {
         index = add(index, step).unwrap();
         if index >= RANGE { return counter; }
     }
-    //0
 }
 
 fn lunch(input: &str) -> u32 {
