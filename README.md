@@ -4,8 +4,6 @@
 
 I'll attempt to solve them in Rust while learning it. purely educational.
 
-----
-
 [Advent of Code]:https://adventofcode.com/2017
 
 ---
@@ -30,6 +28,11 @@ check the validity and security of passphrases
 
 help the CPU simulate jump instructions
 
-----
+---
 
-updated: 2022-08-24
+```
+language: rust
+repo: aoc17r
+status: active
+updated: 2022-12-01
+```
